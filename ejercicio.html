@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+<script>
+let número
+número =parseInt(prompt("elige un número"))
+// for(i=0;i<número;i++){
+//     for(j=0;j<i;j++) {
+//     if(i%2===0){
+//         console.log("x")  
+//     } 
+//         console.log("o")
+//     }
+  
+// }
+let filaPar=""
+let filaImpar=""
+let tablero=""
+for (let index = 0; index < número; index++) {
+    
+if(index%2===0){
+    filaPar+="x"
+    filaImpar+="o"
+    
+}
+else{
+    filaPar+="o"
+    filaImpar+="x"
+}
+  
+}
+for (let index = 0; index < número; index++) {
+   if(index%2===0){
+    tablero+=filaPar
+    
+   }
+   else{
+    tablero+=filaImpar
+   }
+   tablero+="\n"
+    
+}
+ console.log(tablero)
+
+
+
+
+
+
+</script>
+</body>
+</html>
